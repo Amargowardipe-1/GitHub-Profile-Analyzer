@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import api from "../services/api";
 
 const Hero = () => {
   const [username, setUsername] = useState("");
@@ -18,8 +19,8 @@ const Hero = () => {
     try {
       setLoading(true);
 
-      await axios.get(
-        `http://localhost:8080/api/analyze/${username}`
+      await api.get(
+        `/api/analyze/${username}`
       );
 
       

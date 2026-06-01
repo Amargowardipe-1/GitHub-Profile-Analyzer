@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import api from "../services/api";
 
 import ProfileCard from "../components/Profilecard/ProfileCard";
 
@@ -14,8 +15,8 @@ const Profiles = () => {
 
   const fetchProfiles = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:8080/api/profiles"
+      const res = await api.get(
+        "/api/profiles"
       );
 
       setProfiles(res.data.profiles);

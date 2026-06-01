@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import axios from "axios";
+import api from "../services/api";
 
 const ProfileList = () => {
   const [profiles, setProfiles] = useState([]);
@@ -11,8 +12,8 @@ const ProfileList = () => {
 
   const fetchProfiles = async () => {
     try {
-      const res = await axios.get(
-        "http://localhost:8080/api/profiles"
+      const res = await api.get(
+        "/api/profiles"
       );
 
       setProfiles(res.data.profiles);

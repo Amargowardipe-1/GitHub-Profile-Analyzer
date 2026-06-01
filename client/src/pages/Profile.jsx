@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
+import api from "../services/api";
 
 import {
   ArrowLeft,
@@ -25,8 +26,8 @@ const Profile = () => {
 
   const fetchProfile = async () => {
     try {
-      const res = await axios.get(
-        `http://localhost:8080/api/profiles/${username}`
+      const res = await api.get(
+        `/api/profiles/${username}`
       );
 
       setProfile(res.data.profile);
