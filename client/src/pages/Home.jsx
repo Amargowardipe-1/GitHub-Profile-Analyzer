@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar/Navbar";
-import Hero from "../components/Hero/Hero";
+import Navbar from "../components/navbar/Navbar";
+import Hero from "../components/hero/Hero";
 
-import ProfileList from "../components/ProfileList/ProfileList";
+import ProfileList from "../components/profilelist/ProfileList";
 
 
 const Home = () => {

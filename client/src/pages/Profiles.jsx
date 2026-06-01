@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import api from "../services/api";
 
-import ProfileCard from "../components/Profilecard/ProfileCard";
+import ProfileCard from "../components/profilecard/ProfileCard";
 
 const Profiles = () => {
   const [profiles, setProfiles] = useState([]);

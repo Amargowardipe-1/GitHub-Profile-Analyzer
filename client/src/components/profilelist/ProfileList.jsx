@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ProfileCard from "../ProfileCard/ProfileCard";
+import ProfileCard from "../profilecard/ProfileCard";
 import axios from "axios";
 import api from "../../services/api";
 
