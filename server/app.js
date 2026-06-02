@@ -14,6 +14,7 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://githubprofile-analyzer-seven.vercel.app"
+  
   ],
   credentials: true
 }));

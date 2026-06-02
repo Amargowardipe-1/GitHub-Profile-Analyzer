@@ -16,7 +16,7 @@ const Profiles = () => {
   const fetchProfiles = async () => {
     try {
       const res = await api.get(
-        "/api/profiles"
+        "/profiles"
       );
 
       setProfiles(res.data.profiles);
