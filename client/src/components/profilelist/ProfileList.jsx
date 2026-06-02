@@ -29,7 +29,9 @@ const ProfileList = () => {
   </h2>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {profiles.map((profile) => (
+    {profiles
+    .sort((a, b) => new Date(b.analyzed_at) - new Date(a.analyzed_at))
+    .map((profile) => (
         <ProfileCard
           key={profile.id}
           profile={profile}
