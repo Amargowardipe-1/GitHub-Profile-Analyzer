@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://git-hub-profile-analyzer-102wwc531-amargowar-5615s-projects.vercel.app/"
+    "https://git-hub-profile-analyzer-z3mk.vercel.app"
   
   ],
   credentials: true
