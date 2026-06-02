@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ProfileCard from "../profilecard/ProfileCard";
 import axios from "axios";
-import api from "../services/api";
+import api from "../../services/api";
 
 const ProfileList = () => {
   const [profiles, setProfiles] = useState([]);
