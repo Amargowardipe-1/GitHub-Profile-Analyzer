@@ -18,7 +18,7 @@ const Navbar = () => {
     
       <div>
         <a
-          href="/profiles"
+          onClick={() => navigate("/profiles")}
           className="text-gray-300 hover:text-white transition"
         >
           All profiles
