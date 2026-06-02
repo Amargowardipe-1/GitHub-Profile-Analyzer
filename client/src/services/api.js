@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: "https://github-profile-analyzer-db4b.onrender.com",
 });
 
 export default api;
