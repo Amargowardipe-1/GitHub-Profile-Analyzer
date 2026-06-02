@@ -8,9 +8,14 @@ const profileRoutes= require('./routes/profileRoutes')
 
 const app = express();
 
+import cors from "cors";
+
 app.use(cors({
-  origin: "http://localhost:5173",   
-  credentials: true                  
+  origin: [
+    "http://localhost:5173",
+    "https://githubprofile-analyzer-seven.vercel.app"
+  ],
+  credentials: true
 }));
 
 app.use(express.json());
