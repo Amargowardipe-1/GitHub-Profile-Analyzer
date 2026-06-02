@@ -13,7 +13,7 @@ const ProfileList = () => {
   const fetchProfiles = async () => {
     try {
       const res = await api.get(
-        "/profiles"
+        "api/profiles"
       );
 
       setProfiles(res.data.profiles);
