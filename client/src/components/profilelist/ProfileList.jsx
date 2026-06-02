@@ -30,7 +30,7 @@ const ProfileList = () => {
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {profiles
-    .sort((a, b) => new Date(b.analyzed_at) - new Date(a.analyzed_at))
+     .slice(0, 6)
     .map((profile) => (
         <ProfileCard
           key={profile.id}
